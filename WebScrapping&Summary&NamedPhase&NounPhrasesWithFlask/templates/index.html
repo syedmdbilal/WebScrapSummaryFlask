@@ -1,0 +1,106 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wikipedia Analysis</title>
+    <style>
+        /* CSS styles for the page */
+        body {
+            /* Set background color to light gray */
+            background-color: #f2f2f2;
+            /* Center the content horizontally and vertically */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* Set height to 100vh to make sure the content is centered vertically */
+            height: 100vh;
+            /* Set margin to 0 to remove default body margin */
+            margin: 0;
+        }
+
+        /* Style for the container that holds the content */
+        .container {
+            /* Set maximum width for the content */
+            max-width: 400px;
+            /* Add some padding to the container */
+            padding: 20px;
+            /* Set background color to white */
+            background-color: #ffffff;
+            /* Add a border radius to make it look nicer */
+            border-radius: 8px;
+            /* Add a box shadow for a subtle depth effect */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Style for the header */
+        h1 {
+            text-align: center;
+            margin-top: 0; /* Remove top margin for the header */
+        }
+
+        /* Style for the form */
+        form {
+            /* Add some margin to separate the form from the header */
+            margin-top: 20px;
+            /* Center the content horizontally */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Stack the label, input, and button vertically */
+        }
+
+        /* Style for the input field */
+        input[type="text"] {
+            /* Add some padding to the input field */
+            padding: 10px;
+            /* Make the input field take up the full width available */
+            width: 100%;
+            /* Add a border radius to match the form container */
+            border-radius: 8px;
+            /* Add a border to make it stand out */
+            border: 1px solid #ccc;
+        }
+
+        /* Style for the submit button */
+        input[type="submit"] {
+            /* Add some padding to the button */
+            padding: 10px 20px;
+            /* Add a border radius to match the form container */
+            border-radius: 8px;
+            /* Add a background color */
+            background-color: #4CAF50; /* Green color */
+            /* Set text color to white */
+            color: #fff;
+            /* Add a border to make it stand out */
+            border: none;
+            /* Add a slight shadow for a 3D effect */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            /* Add a cursor pointer to indicate interactivity */
+            cursor: pointer;
+        }
+
+        /* Style for the label */
+        label {
+            /* Add some margin to separate the label from the input field */
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Container that holds the content -->
+    <div class="container">
+        <!-- Page Header -->
+        <h1>Web Page Analyzer</h1>
+        
+        <!-- Form for URL Input -->
+        <form method="POST" action="/">
+            <label for="url">Enter the URL:</label><br>
+            <input type="text" name="url" id="url" required><br>
+            <input type="submit" value="Analyze">
+        </form>
+    </div>
+</body>
+</html>
+
+

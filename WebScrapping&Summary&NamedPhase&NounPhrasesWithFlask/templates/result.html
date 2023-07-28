@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Analysis Results</title>
+    <style>
+        body {
+            background-color: rgb(153, 212, 242);
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h2 {
+            margin-top: 20px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 40px;
+            margin-bottom: 20px;
+        }
+        p {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <h1>Analysis Results</h1>
+    <h2>Named Entities:</h2>
+    <ul>
+        {% for entity in named_entities %}
+        <li>{{ entity }}</li>
+        {% endfor %}
+    </ul>
+    <h2>Summary:</h2>
+    <ul>
+        {% for sentence in summary %}
+        <li>{{ sentence }}</li>
+        {% endfor %}
+    </ul>
+    <h2>Noun Phrases:</h2>
+    <ul>
+        {% for phrase in noun_phrases %}
+        <li>{{ phrase }}</li>
+        {% endfor %}
+    </ul>
+    <h2>Full Text:</h2>
+    <p>{{ text }}</p>
+</body>
+</html>
